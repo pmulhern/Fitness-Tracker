@@ -40,6 +40,7 @@ router.put("/api/workouts/:id", (req, res) => {
        .catch(err => {
            res.json(err);
        });
+       console.log(data);
    }).catch(err => {
        console.log(err);
    })
@@ -57,3 +58,7 @@ router.put("/api/workouts/:id", (req, res) => {
 
 
 module.exports = router;
+
+
+
+
