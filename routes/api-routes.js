@@ -4,8 +4,8 @@ const db = require("../models");
 
 router.get("/api/workouts", (req, res) => {
   db.Workout.find({})
-    .then(workout => {
-      res.json(workout);
+    .then(results => {
+      res.json(results);
     })
     .catch(err => {
       res.json(err);
